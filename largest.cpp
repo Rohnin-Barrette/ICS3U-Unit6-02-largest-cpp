@@ -6,8 +6,10 @@
 
 #include <iostream>
 #include <random>
+#include <array>
 
-int largest_finder(int number_list[10]) {
+template<size_t N>
+int largest_finder(std::array<int, N> number_list) {
     // this function finds the smallst number in a list
     int largest;
     int loop_counter;
@@ -27,7 +29,7 @@ int main() {
     // random numbers snd puts them in s list
 
     int largest;
-    int number_list[10];
+    std::array<int, 10> number_list;
     int loop_counter;
     int random_number;
     int largest_number;
